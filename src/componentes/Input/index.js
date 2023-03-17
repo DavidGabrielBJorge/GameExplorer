@@ -3,6 +3,7 @@ import styled from "styled-components";
 //Nesse módulo estará apenas a estilização do input
 
 const Input = styled.input`
+
     order: 1px solid #FFF;
     background: transparent;
     border: 1px solid #FFF;
@@ -17,7 +18,11 @@ const Input = styled.input`
             color: #FFF;
             font-size: 16px;
     }
+
+    @media (max-width: 1300px) {
+        padding: 20px 90px;
+    }
     
-`
+`;
 
 export default Input
