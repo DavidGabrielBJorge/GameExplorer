@@ -23,6 +23,24 @@ const Subtitulo = styled.h3`
     font-weight: 500;
     margin-bottom: 40px;
 `
+
+const Resultado = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    p {
+        width: 200px;
+    }
+    img {
+        width: 100px;
+    }
+    &:hover {
+        border: 1px solid white;
+    }
+`
+
 function Procurar(){
     const [jogosProcurados, setJogosProcurados] = useState([])//como livros é uma lista, deve começar com uma lista vazia
     //Declara o valor inicial do textoDigitado como null 
@@ -40,11 +58,11 @@ function Procurar(){
             {/* onBlur é uma chamada para quando o usuário escreve e clica para fora vai acontecer uma ação, além disso ao dar um blur vai "setar" o textoDigitado*/}
             
             {/* Vai fazer uma varredura nos jogos e retornar o jogo prsquisado*/}
-            {jogosProcurados.map(jogo => (
-                <div>
+            {jogosProcurados.map((jogo, index) => (
+                <Resultado>
                     <p>{jogo.nome}</p>
-                    <img src={jogo.src}></img>  
-                </div>
+                    <img alt="Jogo" key={index} src={jogo.src}></img>  
+                </Resultado>
             ))}
         </ProcurarContainer>
     )
