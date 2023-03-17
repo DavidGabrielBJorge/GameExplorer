@@ -1,5 +1,7 @@
 import Header from './componentes/Header';
+import Procurar from './componentes/Procurar';
 import styled from 'styled-components';
+
 
 /* Utilizando a bibioteca do "styled-components" para estilizar em JS em vez de CSS*/
 const AppContainer = styled.div`
@@ -13,6 +15,7 @@ function App() {
     /* O "AppContainer" é um componente estilizado*/
     <AppContainer>
       <Header></Header>{/* Vai mostrar o menu*/}
+      <Procurar></Procurar>
     </AppContainer>
   );
 }

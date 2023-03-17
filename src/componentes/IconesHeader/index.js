@@ -18,7 +18,7 @@ function IconesHeader() {
     return (
         <Icones>
             { icones.map( (icone, index) => (
-            <Icone><img src={icone}></img></Icone>
+            <Icone key={index}><img src={icone}></img></Icone>
             )) }
         </Icones>
     )
