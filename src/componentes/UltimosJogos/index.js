@@ -1,6 +1,8 @@
 import { jogos } from './dadosUltimosJogos'
 import styled from 'styled-components'
 import { TituloUltimosJogos } from '../Titulo'
+import CardJogosRecomendados from '../CardJogosRecomendados'
+import capaJogo from '../../imagens/jogo.jpg'
 
 const UltimosJogosContainer = styled.section`
     background-color: #EBECEE;
@@ -22,13 +24,28 @@ const NovosJogosContainer = styled.div`
 function UltimosJogos(){
     return(
         <UltimosJogosContainer>
-            <TituloUltimosJogos>Ultimos Jogos Já Lançados</TituloUltimosJogos>
+            {/*Testando props */}
+            <TituloUltimosJogos cor="#EB9B00" fonte="36px">Ultimos Jogos Já Lançados</TituloUltimosJogos>
+            {/*Colocando a cor como preto vai modificar a propriedade da cor do "TituloUltimosJogos" */}
             
+            {/*Mostra todos os jogos já lançados */}
             <NovosJogosContainer>
-                {jogos.map((livro,index) => (
-                    <img key={index} alt='jogos' src={livro.src}></img>
+                {jogos.map((jogo,index) => (
+                    <img key={index} alt='jogos' src={jogo.src}></img>
                 ))}
             </NovosJogosContainer>
+
+            {/*Card com dados de um jogo*/}
+            <CardJogosRecomendados 
+                titulo="Gosta de dificuldade ?"
+                subtitulo="Dark Souls"
+                descricao="Jogo lançado em 2012 é um RPG de ação conhecido pela sua alta dificuldade"
+                imagem={capaJogo}
+                >
+
+            </CardJogosRecomendados>
+
+           
             
         </UltimosJogosContainer>
     )
