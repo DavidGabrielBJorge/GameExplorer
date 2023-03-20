@@ -1,5 +1,6 @@
 import Header from './componentes/Header';
 import Procurar from './componentes/Procurar';
+import UltimosJogos from './componentes/UltimosJogos';
 import styled from 'styled-components';
 
 
@@ -16,6 +17,7 @@ function App() {
     <AppContainer>
       <Header></Header>{/* Vai mostrar o menu*/}
       <Procurar></Procurar>
+      <UltimosJogos></UltimosJogos>
     </AppContainer>
   );
 }
