@@ -32,7 +32,6 @@ const Resultado = styled.div`
     cursor: pointer;
     color: #050a0e;
     
-    
     p {
         width: 200px;
     }
