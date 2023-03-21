@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const TituloUltimosJogos = styled.h2`
     width: 100%;
     padding: 30px 0;
-    background-color: #b4c4de;
+    background-color: ${props => props.background || '#b4c4de'};
     color: ${props => props.cor || '#050a0e'};
     font-size: ${props => props.fonte || '18px'};
     text-align: ${props => props.alinhamento || 'center'};

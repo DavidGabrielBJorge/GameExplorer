@@ -56,7 +56,9 @@ function Procurar(){
                 const jogoDigitado = evento.target.value.trim();
                 let resultadoJogos;
                 if (jogoDigitado === ""){
+                    //Ao digitar nada não vai mostrar nenhum jogo
                     resultadoJogos = []
+                    setJogosProcurados(resultadoJogos)
                 }else{
                     resultadoJogos = jogos.filter( jogo => jogo.nome.includes(jogoDigitado))
                     setJogosProcurados(resultadoJogos)
@@ -67,9 +69,9 @@ function Procurar(){
             
             {/* Vai fazer uma varredura nos jogos e retornar o jogo prsquisado*/}
             {jogosProcurados.map((jogo, index) => (
-                <Resultado>
+                <Resultado key={index}>
                     <p>{jogo.nome}</p>
-                    <img alt="Jogo" key={index} src={jogo.src}></img>  
+                    <img alt="Jogo"  src={jogo.src}></img>  
                 </Resultado>
             ))}
         </ProcurarContainer>

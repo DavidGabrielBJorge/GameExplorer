@@ -2,8 +2,8 @@ import styled from "styled-components"
 import { TituloUltimosJogos } from "../Titulo"
 const Card = styled.div`
     align-items: center;
-    background-color: #FFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #b4c4de;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     display: flex;
     margin: 0 auto;
@@ -11,11 +11,17 @@ const Card = styled.div`
     padding: 25px 20px;
     justify-content: space-around;
     width: 100%;  
+    margin-top:10px;
+
+    @media (max-width: 1300px) {
+        width: 280px;
+        padding: 20px 20px;
+    }
 `
 
 const Botao = styled.button`
-    background-color: #EB9B00;
-    color: #FFF;
+    background-color: #f89950;
+    color: #e7e7e9;
     padding: 10px 0px;
     font-size: 16px;
     border: none;
@@ -24,8 +30,12 @@ const Botao = styled.button`
     text-align: center;
     width: 150px;
     &:hover {
-        cursor: pointer;
+        transition: 1s;
+        background-color: #050a0e;
+        color:#e7e7e9;
     }
+
+
 `
 
 const Descricao = styled.p`
@@ -37,6 +47,10 @@ const Subtitulo = styled.h4`
     font-size: 18px;
     font-weight: bold;
     margin: 15px 0;
+
+    @media (max-width: 1300px) {
+        font-size: 15px;
+    }
 `
 
 const ImgJogo = styled.img`
@@ -47,8 +61,7 @@ function CardJogosRecomendados({titulo, subtitulo, descricao, imagem}){
     return(
         <Card>
             <div>
-                
-                <TituloUltimosJogos fonte="16px" cor="#000" alinhamento="left">{titulo}</TituloUltimosJogos>
+                <TituloUltimosJogos fonte="20px" background="#b4c4de" alinhamento="left">{titulo}</TituloUltimosJogos>
                 <Subtitulo>{subtitulo}</Subtitulo>
                 <Descricao>{descricao}</Descricao>
             </div>
@@ -57,6 +70,9 @@ function CardJogosRecomendados({titulo, subtitulo, descricao, imagem}){
                 <Botao>Saiba mais</Botao>
             </div>
         </Card>
+
+        
+        
     )
 }
 
