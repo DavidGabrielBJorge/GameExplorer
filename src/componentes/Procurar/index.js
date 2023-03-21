@@ -8,7 +8,6 @@ const ProcurarContainer = styled.section`
     color: #FFF;
     text-align: center;
     padding: 85px 0;
-    height: 270px;
     width: 100%;
 `
 const Titulo = styled.h2`
@@ -29,8 +28,11 @@ const Resultado = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     cursor: pointer;
+    color: #050a0e;
+    
+    
     p {
         width: 200px;
     }
@@ -52,9 +54,15 @@ function Procurar(){
             <Subtitulo>Pesquise em nossa galeria de jogos: </Subtitulo>
             <Input placeholder="Digite o nome do jogo" 
             onBlur={evento =>{
-                const jogoDigitado = evento.target.value
-                const resultadoJogos=jogos.filter( livro => livro.nome.includes(jogoDigitado))
-                setJogosProcurados(resultadoJogos)
+                const jogoDigitado = evento.target.value.trim();
+                let resultadoJogos;
+                if (jogoDigitado === ""){
+                    resultadoJogos = []
+                }else{
+                    resultadoJogos = jogos.filter( jogo => jogo.nome.includes(jogoDigitado))
+                    setJogosProcurados(resultadoJogos)
+                }
+
             }}></Input>
             {/* onBlur é uma chamada para quando o usuário escreve e clica para fora vai acontecer uma ação, além disso ao dar um blur vai "setar" o textoDigitado*/}
             
