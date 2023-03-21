@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { jogos } from './dadosProcura'
 
 const ProcurarContainer = styled.section`
-    background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
+    background-color: #f89950;
     color: #FFF;
     text-align: center;
     padding: 85px 0;
@@ -12,7 +12,7 @@ const ProcurarContainer = styled.section`
     width: 100%;
 `
 const Titulo = styled.h2`
-    color: #FFF;
+    color: #050a0e;
     font-size: 36px;
     text-align: center;
     width: 100%;
@@ -22,6 +22,7 @@ const Subtitulo = styled.h3`
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 40px;
+    color: #050a0e;
 `
 
 const Resultado = styled.div`

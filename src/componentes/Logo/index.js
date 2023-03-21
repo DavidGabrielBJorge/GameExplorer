@@ -4,6 +4,10 @@ import styled from 'styled-components';
 const LogoContainer = styled.div`
     display: flex;
     font-size: 30px;
+
+    @media (max-width: 1300px) {
+        font-size: 25px;
+    }
 `
 
 const LogoImage = styled.img`

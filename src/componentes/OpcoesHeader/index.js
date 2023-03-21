@@ -2,10 +2,14 @@ import styled from 'styled-components';
 
 const Menu = styled.ul`
     display: flex;
+
+    @media (max-width: 1300px) {
+        display: none;
+    }
 `
 
 const Opcao = styled.li`
-    font-size: 18px;
+    font-size: 20px;
     min-width: 120px;
     display: flex;
     justify-content: center;
@@ -14,6 +18,11 @@ const Opcao = styled.li`
     cursor: pointer;
     height: 100%;
     padding: 0 5px;
+    color: #050a0e;
+
+    @media (max-width: 1300px) {
+        display: none;
+    }
 `
 
 const opcoes = ['Início', 'Sobre', 'Contato']
