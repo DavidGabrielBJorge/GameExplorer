@@ -19,7 +19,7 @@ const NovosJogosContainer = styled.div`
     cursor: pointer;
 
     img{
-    margin: 10px;
+    margin: 5px;
     }
 `
 

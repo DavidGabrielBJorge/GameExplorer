@@ -9,7 +9,7 @@ import ContainerCard from './componentes/ContainerCard';
 
 /* Utilizando a bibioteca do "styled-components" para estilizar em JS em vez de CSS*/
 const AppContainer = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color:#f89950; !important
 
