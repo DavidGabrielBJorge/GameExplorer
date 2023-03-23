@@ -1,6 +1,7 @@
 import Header from './componentes/Header';
 import Procurar from './componentes/Procurar';
 import UltimosJogos from './componentes/UltimosJogos';
+import BotaoRepositorio from './componentes/BotaoRepositorio';
 import styled from 'styled-components';
 
 
@@ -18,6 +19,7 @@ function App() {
       <Header></Header>{/* Vai mostrar o menu*/}
       <Procurar></Procurar>
       <UltimosJogos></UltimosJogos>
+      <BotaoRepositorio></BotaoRepositorio>
     </AppContainer>
   );
 }
