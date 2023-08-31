@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/GameExplorer/static/js/main.d791a549.js",
+    "main.js": "/GameExplorer/static/js/main.a3c7085f.js",
     "static/js/787.703f01ca.chunk.js": "/GameExplorer/static/js/787.703f01ca.chunk.js",
     "static/media/jogo2.jpg": "/GameExplorer/static/media/jogo2.9ed561dfd3fbd5211786.jpg",
     "static/media/jogo4.jpg": "/GameExplorer/static/media/jogo4.4d25bfb22f55a6c5c68d.jpg",
@@ -12,10 +12,10 @@
     "static/media/account.svg": "/GameExplorer/static/media/account.a37abdff661249c1daf11ba903674705.svg",
     "index.html": "/GameExplorer/index.html",
     "static/media/logoSite.svg": "/GameExplorer/static/media/logoSite.ed59414bd7959dbf9b96cbfb27b30519.svg",
-    "main.d791a549.js.map": "/GameExplorer/static/js/main.d791a549.js.map",
+    "main.a3c7085f.js.map": "/GameExplorer/static/js/main.a3c7085f.js.map",
     "787.703f01ca.chunk.js.map": "/GameExplorer/static/js/787.703f01ca.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d791a549.js"
+    "static/js/main.a3c7085f.js"
   ]
 }
