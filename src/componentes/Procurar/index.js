@@ -49,7 +49,7 @@ function Procurar(){
 
     return(
         <ProcurarContainer>
-            <Titulo>Sabe qual jogo deseja conhecer ?</Titulo>
+            <Titulo>Qual jogo deseja conhecer ?</Titulo>
             <Subtitulo>Pesquise em nossa galeria de jogos: </Subtitulo>
             <Input placeholder="Digite o nome do jogo" 
             onBlur={evento =>{
